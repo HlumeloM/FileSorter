@@ -21,7 +21,7 @@ for file in files:
     if extension == '':
         continue
 
-    # Create the directory if it does not exists
+    # Create the directory if it does not exist
     destination_dir = os.path.join(path, extension)
     if not os.path.exists(destination_dir):
         os.makedirs(destination_dir)
@@ -30,3 +30,6 @@ for file in files:
     shutil.move(os.path.join(path, file), os.path.join(destination_dir, file))
 
 print("Files have been sorted.")
+
+#Add a method that regularly checks if there are new files in downloads and automaticaly sorts them
+# into their respective folders 
